@@ -58,8 +58,9 @@ WSGI_APPLICATION = 'JustChillDjango.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'DevDB',
+        'ENGINE': 'sqlserver_ado',
+        'HOST': 'localhost'
     }
 }
 
