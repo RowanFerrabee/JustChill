@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'JustChillBack',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -60,7 +61,9 @@ DATABASES = {
     'default': {
         'NAME': 'DevDB',
         'ENGINE': 'sqlserver_ado',
-        'HOST': 'localhost'
+        'HOST': 'localhost',
+        'USER': '',
+        'PASSWORD':''
     }
 }
 
