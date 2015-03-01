@@ -1,5 +1,5 @@
 """
-Django settings for backend project.
+Django settings for JustChillDjango project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'n=ck30+0j)e#gw*!npx4&u8tq!ya67ahv)@vim32laifrf)e^w'
+SECRET_KEY = 'ma5wa2@g$vwa4m!yh^$a78)t!#u6&3bsydu91)3@&-(fd-ok#y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -36,7 +36,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'jc_backend',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -49,9 +48,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'backend.urls'
+ROOT_URLCONF = 'JustChillDjango.urls'
 
-WSGI_APPLICATION = 'backend.wsgi.application'
+WSGI_APPLICATION = 'JustChillDjango.wsgi.application'
 
 
 # Database
@@ -82,7 +81,3 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
-
-TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR,  'templates'),
-)
